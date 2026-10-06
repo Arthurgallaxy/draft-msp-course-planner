@@ -66,13 +66,13 @@
      other tools of that suite at the top of the sidebar, and links "All tools" to that suite's hub.
      Served anywhere else (a local copy, a tool on its own domain) the switcher stays off. */
   var SUITES = {
-    students: { label: 'Students', hub: '', tools: [
+    students: { label: 'Students', one: 'student', hub: '', tools: [
       { slug: 'faq',             name: 'Student FAQ',       icon: 'help' },
       { slug: 'course-planner',  name: 'Course Planner',    icon: 'calendar' },
       { slug: 'btr-dashboard',   name: 'BTR Dashboard',     icon: 'book' },
       { slug: 'project-periods', name: 'Project Periods',   icon: 'target' },
       { slug: 'msp-alumni',      name: 'MSP Alumni',        icon: 'globe' } ] },
-    staff: { label: 'Staff', hub: 'staff.html', tools: [
+    staff: { label: 'Staff', one: 'staff', hub: 'staff.html', tools: [
       { slug: 'project-periods',   name: 'Project Periods',    icon: 'target' },
       { slug: 'academic-calendar', name: 'Academic Calendar',  icon: 'clock' },
       { slug: 'exams-office',      name: 'Exams Office',       icon: 'clipboard' },
@@ -204,7 +204,7 @@
     if (su) hub = su.root + su.suite.hub;
     var brand = su
       ? '<div class="msp-sb-brand msp-has-switch">' +
-          '<a href="' + esc(hub) + '" title="All ' + esc(su.suite.label.toLowerCase()) + ' tools"><img src="' + esc(base + 'um-wordmark.png') + '" alt="Maastricht University" class="msp-sb-logo"></a>' +
+          '<a href="' + esc(hub) + '" title="All ' + esc(su.suite.one) + ' tools"><img src="' + esc(base + 'um-wordmark.png') + '" alt="Maastricht University" class="msp-sb-logo"></a>' +
           '<button type="button" class="msp-switch" id="msp-switch" aria-haspopup="true" aria-expanded="false" aria-controls="msp-switch-menu">' +
             '<span class="msp-switch-k">' + esc(SUITE_NAME) + ' \u00b7 ' + esc(su.suite.label) + '</span>' +
             '<span class="msp-switch-t">' + esc(su.tool.name) + '</span>' +
@@ -216,7 +216,7 @@
               return '<a role="menuitem" class="msp-switch-item' + (cur ? ' current' : '') + '" href="' + esc(su.root + t.slug + '/') + '"' + (cur ? ' aria-current="page"' : '') + '>' +
                 '<span class="msp-sb-ico">' + icon(t.icon) + '</span><span>' + esc(t.name) + '</span>' + (cur ? '<span class="msp-switch-here">here</span>' : '') + '</a>';
             }).join('') +
-            '<a role="menuitem" class="msp-switch-all" href="' + esc(hub) + '">' + ICONS.hub + ' All ' + esc(su.suite.label.toLowerCase()) + ' tools</a>' +
+            '<a role="menuitem" class="msp-switch-all" href="' + esc(hub) + '">' + ICONS.hub + ' All ' + esc(su.suite.one) + ' tools</a>' +
           '</div>' +
         '</div>'
       : '<div class="msp-sb-brand"><a href="' + esc(home) + '">' +
@@ -234,7 +234,7 @@
       '<div class="msp-sb-footer">' +
         '<img class="msp-sb-emblem" src="' + esc(base + 'msp-emblem.png') + '" alt="Maastricht Science Programme">' +
         (cfg.footer ? '<div class="msp-sb-privacy">' + esc(cfg.footer) + '</div>' : '') +
-        (hub ? '<a class="msp-sb-hub" href="' + esc(hub) + '">' + ICONS.hub + (su ? ' All ' + esc(su.suite.label.toLowerCase()) + ' tools' : ' All MSP tools') + '</a>' : '') +
+        (hub ? '<a class="msp-sb-hub" href="' + esc(hub) + '">' + ICONS.hub + (su ? ' All ' + esc(su.suite.one) + ' tools' : ' All MSP tools') + '</a>' : '') +
       '</div>';
     return aside;
   }

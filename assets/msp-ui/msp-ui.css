@@ -358,7 +358,7 @@ body.msp-body{margin:0;font-family:var(--msp-font);background:var(--msp-g0);colo
   box-shadow:0 18px 40px rgba(0,0,0,.35);padding:6px;animation:msp-pop .16s ease-out}
 .msp-switch-menu[hidden]{display:none}
 @keyframes msp-pop{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
-.msp-switch-item,.msp-switch-all{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;color:rgba(255,255,255,.8);font-size:13px;font-weight:500;text-decoration:none;outline:none}
+.msp-sb-brand .msp-switch-item,.msp-sb-brand .msp-switch-all,.msp-switch-item,.msp-switch-all{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;color:rgba(255,255,255,.8);font-size:13px;font-weight:500;text-decoration:none;outline:none}
 .msp-switch-item .msp-sb-ico{width:30px;height:30px;border-radius:8px}
 .msp-switch-item .msp-sb-ico svg{width:15px;height:15px}
 .msp-switch-item:hover,.msp-switch-item:focus-visible,.msp-switch-all:hover,.msp-switch-all:focus-visible{background:rgba(255,255,255,.08);color:#fff}
@@ -382,4 +382,4 @@ body.msp-body{margin:0;font-family:var(--msp-font);background:var(--msp-g0);colo
 @media (prefers-reduced-motion:reduce){@view-transition{navigation:none}}
 
 /* preview build */
-.msp-sb-brand{position:relative}.msp-sb-brand::after{content:"PREVIEW";position:absolute;top:12px;right:16px;font:700 9px/1 var(--msp-font);letter-spacing:.12em;color:var(--msp-navy);background:var(--msp-sky);padding:4px 6px;border-radius:4px}
+.msp-sb-brand{position:relative}.msp-sb-brand::after{content:"PREVIEW";position:absolute;top:12px;right:16px;font:700 9px/1 var(--msp-font);letter-spacing:.12em;color:var(--msp-navy);background:var(--msp-sky);padding:4px 6px;border-radius:4px}@media(max-width:900px){.msp-sb-brand::after{top:auto;bottom:4px;right:16px}}
