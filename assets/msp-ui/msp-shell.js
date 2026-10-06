@@ -61,6 +61,43 @@
   var HUB_URL = 'https://msp-operations.github.io/MSP-Remodel-Preview/';   // not live yet, see _REMODEL_CONTEXT.md
   var SUBTITLE = 'Maastricht Science Programme<br>Faculty of Science &amp; Engineering';
 
+  /* The tool suites. When a page is served from below the hub's folder (HUB_URL minus its file
+     name), the shell recognises which tool it is by its first folder, shows a switcher with the
+     other tools of that suite at the top of the sidebar, and links "All tools" to that suite's hub.
+     Served anywhere else (a local copy, a tool on its own domain) the switcher stays off. */
+  var SUITES = {
+    students: { label: 'Students', hub: '', tools: [
+      { slug: 'faq',             name: 'Student FAQ',       icon: 'help' },
+      { slug: 'course-planner',  name: 'Course Planner',    icon: 'calendar' },
+      { slug: 'btr-dashboard',   name: 'BTR Dashboard',     icon: 'book' },
+      { slug: 'project-periods', name: 'Project Periods',   icon: 'target' },
+      { slug: 'msp-alumni',      name: 'MSP Alumni',        icon: 'globe' } ] },
+    staff: { label: 'Staff', hub: 'staff.html', tools: [
+      { slug: 'project-periods',   name: 'Project Periods',    icon: 'target' },
+      { slug: 'academic-calendar', name: 'Academic Calendar',  icon: 'clock' },
+      { slug: 'exams-office',      name: 'Exams Office',       icon: 'clipboard' },
+      { slug: 'tutoring',          name: 'Tutor Registration', icon: 'users' },
+      { slug: 'btr-projects',      name: 'BTR Projects',       icon: 'briefcase' } ] }
+  };
+  var SUITE_NAME = 'MSP Online';   // placeholder name, Martijn's call
+
+  function ss(k, v) { try { if (v === undefined) return sessionStorage.getItem(k); sessionStorage.setItem(k, v); } catch (e) { return null; } }
+
+  // which suite and tool is this page? null when not served from the suite folder
+  function detectSuite(hubUrl) {
+    var root = String(hubUrl || '').replace(/[^\/]*$/, '');
+    if (!root || location.href.indexOf(root) !== 0) return null;
+    var slug = location.href.slice(root.length).split(/[\/?#]/)[0];
+    var hits = Object.keys(SUITES).filter(function (k) { return SUITES[k].tools.some(function (t) { return t.slug === slug; }); });
+    if (!hits.length) return null;
+    var last = ss('msp-suite');
+    var key = hits.indexOf(last) >= 0 ? last : hits[0];
+    ss('msp-suite', key);
+    var suite = SUITES[key];
+    return { key: key, suite: suite, root: root, slug: slug,
+             tool: suite.tools.filter(function (t) { return t.slug === slug; })[0] };
+  }
+
   var scriptEl = document.currentScript;
   var BASE = scriptEl ? scriptEl.src.replace(/[^\/]*$/, '') : '';
 
@@ -112,6 +149,7 @@
     tool:     P + '<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>',
     link:     P + '<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>',
     back:     P + '<line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>',
+    chevron:  P + '<polyline points="6 9 12 15 18 9"/></svg>',
     menu:     P + '<line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>',
     x:        P + '<line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>',
     hub:      P + '<circle cx="12" cy="12" r="3"/><circle cx="12" cy="3" r="1.5"/><circle cx="12" cy="21" r="1.5"/><circle cx="3" cy="12" r="1.5"/><circle cx="21" cy="12" r="1.5"/><line x1="12" y1="9" x2="12" y2="4.5"/><line x1="12" y1="15" x2="12" y2="19.5"/><line x1="9" y1="12" x2="4.5" y2="12"/><line x1="15" y1="12" x2="19.5" y2="12"/></svg>'
@@ -162,21 +200,41 @@
     aside.className = 'msp-sidebar';
     aside.id = 'msp-sidebar';
     aside.setAttribute('aria-label', 'Site navigation');
+    var su = state.suite;
+    if (su) hub = su.root + su.suite.hub;
+    var brand = su
+      ? '<div class="msp-sb-brand msp-has-switch">' +
+          '<a href="' + esc(hub) + '" title="All ' + esc(su.suite.label.toLowerCase()) + ' tools"><img src="' + esc(base + 'um-wordmark.png') + '" alt="Maastricht University" class="msp-sb-logo"></a>' +
+          '<button type="button" class="msp-switch" id="msp-switch" aria-haspopup="true" aria-expanded="false" aria-controls="msp-switch-menu">' +
+            '<span class="msp-switch-k">' + esc(SUITE_NAME) + ' \u00b7 ' + esc(su.suite.label) + '</span>' +
+            '<span class="msp-switch-t">' + esc(su.tool.name) + '</span>' +
+            '<span class="msp-switch-c">' + ICONS.chevron + '</span>' +
+          '</button>' +
+          '<div class="msp-switch-menu" id="msp-switch-menu" role="menu" hidden>' +
+            su.suite.tools.map(function (t) {
+              var cur = t.slug === su.slug;
+              return '<a role="menuitem" class="msp-switch-item' + (cur ? ' current' : '') + '" href="' + esc(su.root + t.slug + '/') + '"' + (cur ? ' aria-current="page"' : '') + '>' +
+                '<span class="msp-sb-ico">' + icon(t.icon) + '</span><span>' + esc(t.name) + '</span>' + (cur ? '<span class="msp-switch-here">here</span>' : '') + '</a>';
+            }).join('') +
+            '<a role="menuitem" class="msp-switch-all" href="' + esc(hub) + '">' + ICONS.hub + ' All ' + esc(su.suite.label.toLowerCase()) + ' tools</a>' +
+          '</div>' +
+        '</div>'
+      : '<div class="msp-sb-brand"><a href="' + esc(home) + '">' +
+          '<img src="' + esc(base + 'um-wordmark.png') + '" alt="Maastricht University" class="msp-sb-logo">' +
+          '<div class="msp-sb-title' + (String(cfg.title || '').length > 18 ? ' long' : '') + '">' + esc(cfg.title) + '</div>' +
+          '<div class="msp-sb-sub">' + (cfg.subtitle != null ? cfg.subtitle : SUBTITLE) + '</div>' +
+        '</a></div>';
     aside.innerHTML =
-      '<div class="msp-sb-brand"><a href="' + esc(home) + '">' +
-        '<img src="' + esc(base + 'um-wordmark.png') + '" alt="Maastricht University" class="msp-sb-logo">' +
-        '<div class="msp-sb-title' + (String(cfg.title || '').length > 18 ? ' long' : '') + '">' + esc(cfg.title) + '</div>' +
-        '<div class="msp-sb-sub">' + (cfg.subtitle != null ? cfg.subtitle : SUBTITLE) + '</div>' +
-      '</a></div>' +
+      brand +
       '<nav class="msp-sb-nav" aria-label="Main">' +
         (hasLabel ? '' : '<div class="msp-sb-label">Navigation</div>') +
         buildNav(cfg.nav || [], cfg) +
       '</nav>' +
       '<div class="msp-sb-meta" id="msp-sb-meta">' + (cfg.meta || '') + '</div>' +
       '<div class="msp-sb-footer">' +
-        '<img src="' + esc(base + 'msp-emblem.png') + '" alt="Maastricht Science Programme">' +
+        '<img class="msp-sb-emblem" src="' + esc(base + 'msp-emblem.png') + '" alt="Maastricht Science Programme">' +
         (cfg.footer ? '<div class="msp-sb-privacy">' + esc(cfg.footer) + '</div>' : '') +
-        (hub ? '<a class="msp-sb-hub" href="' + esc(hub) + '">' + ICONS.hub + ' All MSP tools</a>' : '') +
+        (hub ? '<a class="msp-sb-hub" href="' + esc(hub) + '">' + ICONS.hub + (su ? ' All ' + esc(su.suite.label.toLowerCase()) + ' tools' : ' All MSP tools') + '</a>' : '') +
       '</div>';
     return aside;
   }
@@ -252,16 +310,50 @@
     });
   }
 
+  function wireSwitch() {
+    var btn = document.getElementById('msp-switch'), menu = document.getElementById('msp-switch-menu');
+    if (!btn || !menu) return;
+    function show(on) {
+      menu.hidden = !on; btn.setAttribute('aria-expanded', on ? 'true' : 'false');
+      btn.classList.toggle('open', on);
+      if (on) { var f = menu.querySelector('.msp-switch-item:not(.current)'); if (f) f.focus(); }
+    }
+    btn.addEventListener('click', function (e) { e.stopPropagation(); show(menu.hidden); });
+    document.addEventListener('click', function (e) { if (!menu.hidden && !menu.contains(e.target)) show(false); });
+    document.addEventListener('keydown', function (e) {
+      if (menu.hidden) return;
+      if (e.key === 'Escape') { show(false); btn.focus(); }
+      if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+        var items = [].slice.call(menu.querySelectorAll('a')), i = items.indexOf(document.activeElement);
+        items[(i + (e.key === 'ArrowDown' ? 1 : items.length - 1)) % items.length].focus(); e.preventDefault();
+      }
+    });
+    // load the other tools in the background while the pointer rests on them: the click then feels instant
+    var urls = [].slice.call(menu.querySelectorAll('a:not(.current)')).map(function (a) { return a.href; });
+    if (window.HTMLScriptElement && HTMLScriptElement.supports && HTMLScriptElement.supports('speculationrules')) {
+      var sr = document.createElement('script'); sr.type = 'speculationrules';
+      sr.textContent = JSON.stringify({ prerender: [{ source: 'list', urls: urls, eagerness: 'moderate' }] });
+      document.head.appendChild(sr);
+    } else {
+      menu.addEventListener('pointerover', function (e) {
+        var a = e.target.closest && e.target.closest('a'); if (!a || a.dataset.pf) return;
+        a.dataset.pf = 1; var l = document.createElement('link'); l.rel = 'prefetch'; l.href = a.href; document.head.appendChild(l);
+      });
+    }
+  }
+
   function setMeta(html) { var m = document.getElementById('msp-sb-meta'); if (m) m.innerHTML = html || ''; }
 
   function init(cfg) {
     if (state.aside) return state;  // already built
     state.cfg = cfg = cfg || {};
+    state.suite = cfg.suite === false ? null : detectSuite(cfg.hub ? cfg.hub : HUB_URL);
     if (cfg.bodyClass !== false) document.body.classList.add('msp-body');
     var aside = build(cfg);
     state.aside = aside;
     if (cfg.wrap !== false) wrap(aside); else document.body.insertBefore(aside, document.body.firstChild);
     addChrome(aside);
+    wireSwitch();
     state.links = Array.prototype.slice.call(aside.querySelectorAll('.msp-sb-link'));
     state.links.forEach(function (a) {
       a.addEventListener('click', function (e) {
@@ -280,6 +372,6 @@
   global.MSPShell = {
     init: function (cfg) { ready(function () { init(cfg); }); return global.MSPShell; },
     setActive: setActive, setMeta: setMeta, open: open, close: close, toggle: toggleDrawer,
-    icon: icon, icons: ICONS, HUB_URL: HUB_URL, base: BASE
+    icon: icon, icons: ICONS, HUB_URL: HUB_URL, base: BASE, suites: SUITES, suiteName: SUITE_NAME, rememberSuite: function (k) { ss('msp-suite', k); }
   };
 })(window);

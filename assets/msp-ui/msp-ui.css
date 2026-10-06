@@ -339,5 +339,47 @@ body.msp-body{margin:0;font-family:var(--msp-font);background:var(--msp-g0);colo
 @keyframes msp-fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:700px){.msp-grid-2,.msp-grid-3{grid-template-columns:1fr}}
 
+/* 7. Suite switcher + page transitions ------------------------------------------------------
+   The switcher replaces the brand title when a tool is served inside a suite (see msp-shell.js,
+   SUITES). Page changes between same-origin pages cross-fade with the sidebar held still, and
+   the MSP emblem glides between the hub's centre and the sidebar footer. */
+.msp-has-switch{position:relative;padding-bottom:18px}
+.msp-has-switch>a{display:inline-block}
+.msp-switch{display:grid;grid-template-columns:1fr auto;align-items:center;column-gap:8px;width:100%;margin:2px 0 0;padding:10px 12px;border-radius:10px;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#fff;font-family:inherit;text-align:left;cursor:pointer;transition:background .2s,border-color .2s}
+.msp-switch:hover,.msp-switch.open{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.18)}
+.msp-switch:focus-visible{outline:2px solid var(--msp-sky);outline-offset:2px}
+.msp-switch-k{grid-column:1;font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--msp-sky);opacity:.85;line-height:1.3}
+.msp-switch-t{grid-column:1;font-family:var(--msp-font-display);font-size:18px;font-weight:700;letter-spacing:-.02em;line-height:1.2;margin-top:2px}
+.msp-switch-c{grid-column:2;grid-row:1/3;display:flex;color:rgba(255,255,255,.5);transition:transform .2s}
+.msp-switch-c svg{width:16px;height:16px}
+.msp-switch.open .msp-switch-c{transform:rotate(180deg)}
+.msp-switch-menu{position:absolute;left:14px;right:14px;top:calc(100% - 10px);z-index:5;background:#0A2547;border:1px solid rgba(255,255,255,.12);border-radius:12px;
+  box-shadow:0 18px 40px rgba(0,0,0,.35);padding:6px;animation:msp-pop .16s ease-out}
+.msp-switch-menu[hidden]{display:none}
+@keyframes msp-pop{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+.msp-switch-item,.msp-switch-all{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;color:rgba(255,255,255,.8);font-size:13px;font-weight:500;text-decoration:none;outline:none}
+.msp-switch-item .msp-sb-ico{width:30px;height:30px;border-radius:8px}
+.msp-switch-item .msp-sb-ico svg{width:15px;height:15px}
+.msp-switch-item:hover,.msp-switch-item:focus-visible,.msp-switch-all:hover,.msp-switch-all:focus-visible{background:rgba(255,255,255,.08);color:#fff}
+.msp-switch-item.current{color:#fff;font-weight:600}
+.msp-switch-item.current .msp-sb-ico{background:rgba(110,210,236,.15);color:var(--msp-sky)}
+.msp-switch-here{margin-left:auto;font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--msp-sky)}
+.msp-switch-all{margin-top:4px;border-top:1px solid rgba(255,255,255,.08);border-radius:0 0 8px 8px;padding-top:10px;font-size:11.5px;color:rgba(255,255,255,.55)}
+.msp-switch-all svg{width:13px;height:13px}
+
+@view-transition{navigation:auto}
+.msp-sidebar{view-transition-name:msp-sidebar}
+.msp-sb-emblem{view-transition-name:msp-emblem}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.28s;animation-timing-function:cubic-bezier(.2,.7,.2,1)}
+::view-transition-old(root){animation-name:msp-vt-out}
+::view-transition-new(root){animation-name:msp-vt-in}
+@keyframes msp-vt-out{to{opacity:0;transform:translateY(-6px)}}
+@keyframes msp-vt-in{from{opacity:0;transform:translateY(8px)}}
+::view-transition-group(msp-sidebar){animation-duration:.28s}
+::view-transition-group(msp-emblem){animation-duration:.5s;animation-timing-function:cubic-bezier(.2,.7,.2,1)}
+@media (max-width:900px){.msp-sidebar{view-transition-name:none}}
+@media (prefers-reduced-motion:reduce){@view-transition{navigation:none}}
+
 /* preview build */
 .msp-sb-brand{position:relative}.msp-sb-brand::after{content:"PREVIEW";position:absolute;top:12px;right:16px;font:700 9px/1 var(--msp-font);letter-spacing:.12em;color:var(--msp-navy);background:var(--msp-sky);padding:4px 6px;border-radius:4px}
