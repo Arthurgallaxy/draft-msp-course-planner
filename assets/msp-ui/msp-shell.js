@@ -77,7 +77,7 @@
       { slug: 'academic-calendar', name: 'Academic Calendar',  icon: 'clock' },
       { slug: 'exams-office',      name: 'Exams Office',       icon: 'clipboard' },
       { slug: 'tutoring',          name: 'Tutor Registration', icon: 'users' },
-      { slug: 'btr-projects',      name: 'BTR Projects',       icon: 'briefcase' } ] }
+      { slug: 'btr-projects',      name: 'BTR for Supervisors', icon: 'briefcase' } ] }
   };
   var SUITE_NAME = 'MSP Online';   // placeholder name, Martijn's call
 
@@ -354,6 +354,11 @@
     if (cfg.wrap !== false) wrap(aside); else document.body.insertBefore(aside, document.body.firstChild);
     addChrome(aside);
     wireSwitch();
+    // inside a suite, links to the other tools stay in the same tab (one app, not a pile of tabs)
+    if (state.suite) document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[target="_blank"]');
+      if (a && a.href && a.href.indexOf(state.suite.root) === 0) a.removeAttribute('target');
+    }, true);
     state.links = Array.prototype.slice.call(aside.querySelectorAll('.msp-sb-link'));
     state.links.forEach(function (a) {
       a.addEventListener('click', function (e) {
