@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "1.1",
+  "academicYear": "2026-2027",
+  "periods": {
+    "P1": {
+      "label": "Period 1 · Fall (31 Aug – 16 Oct 2026)",
+      "csv": "data/periods/P1.csv",
+      "number": 1,
+      "defaultDateRange": {
+        "start": "08-31",
+        "end": "10-16"
+      }
+    },
+    "P2": {
+      "label": "Period 2 · Fall (27 Oct – 11 Dec 2026)",
+      "csv": "data/periods/P2.csv",
+      "number": 2,
+      "defaultDateRange": {
+        "start": "10-17",
+        "end": "12-31"
+      }
+    },
+    "P4": {
+      "label": "Period 4 · Spring (25 Jan – 26 Mar 2027)",
+      "csv": "data/periods/P4.csv",
+      "number": 4,
+      "defaultDateRange": {
+        "start": "01-01",
+        "end": "03-26"
+      }
+    },
+    "P5": {
+      "label": "Period 5 · Spring (29 Mar – May 2027)",
+      "csv": "data/periods/P5.csv",
+      "number": 5,
+      "defaultDateRange": {
+        "start": "03-27",
+        "end": "06-01"
+      }
+    }
+  },
+  "defaultPeriodRules": [
+    {
+      "from": "08-31",
+      "to": "10-16",
+      "period": "P1"
+    },
+    {
+      "from": "10-17",
+      "to": "12-31",
+      "period": "P2"
+    },
+    {
+      "from": "01-01",
+      "to": "03-26",
+      "period": "P4"
+    },
+    {
+      "from": "03-27",
+      "to": "06-01",
+      "period": "P5"
+    },
+    {
+      "fallback": "P1"
+    }
+  ],
+  "files": {
+    "courseDescriptions": "data/course_descriptions.md",
+    "courseCatalogueCsv": "data/course_catalogue.csv",
+    "courseCatalogueJson": "data/course_catalogue.json",
+    "loadRules": "data/load_rules.json",
+    "bundles": "data/bundles.json"
+  },
+  "timeBlocks": {
+    "days": [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri"
+    ],
+    "times": [
+      "AM",
+      "PM"
+    ]
+  },
+  "slotDays": {
+    "A": [
+      "MonAM",
+      "WedPM"
+    ],
+    "B": [
+      "MonPM",
+      "ThuAM"
+    ],
+    "C": [
+      "TueAM",
+      "ThuPM"
+    ],
+    "D": [
+      "TuePM",
+      "FriAM"
+    ],
+    "E": [
+      "WedAM",
+      "FriPM"
+    ]
+  },
+  "coreCodes": [
+    "BIO1101",
+    "CHE1101",
+    "PHY1101",
+    "INT1101",
+    "PRA1101",
+    "PRA1102",
+    "PRO1101"
+  ],
+  "humanitiesCodes": [
+    "INT2007",
+    "INT3001",
+    "HUM2051",
+    "INT2013",
+    "INT3012"
+  ]
+}

@@ -1,0 +1,1325 @@
+[
+  {
+    "code": "BIO1101",
+    "title": "Introduction to Biology",
+    "coordinator": "David Cortens",
+    "corequisite": "TRUE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "PRA1102",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "BIO2001",
+    "title": "Cell Biology",
+    "coordinator": "Prof. dr. Martijn van Griensven and Dr Aart van Apeldoorn",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "BIO2002",
+    "title": "Ecology",
+    "coordinator": "Dr. John Sloggett",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "BIO2003",
+    "title": "General Botany",
+    "coordinator": "Dr. Phil Klahs",
+    "corequisite": "TRUE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "PRA2011",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "BIO2004",
+    "title": "General Zoology",
+    "coordinator": "Dr. John Sloggett",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "BIO2005",
+    "title": "Evolutionary Biology",
+    "coordinator": "Dr. Linnea van Griethuijsen",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "BIO2006",
+    "title": "Biotechnology",
+    "coordinator": "Dr. David Cortens",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "BIO2007+PRA2014"
+  },
+  {
+    "code": "BIO2007",
+    "title": "Genetics",
+    "coordinator": "Prof. dr. Leon de Windt",
+    "corequisite": "TRUE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "PRA2014",
+    "prerequisiteCodes": "BIO2001"
+  },
+  {
+    "code": "BIO2008",
+    "title": "Great Transformations in Vertebrate Evolution",
+    "coordinator": "Prof. Dr. Leon Claessens",
+    "corequisite": "TRUE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "PRA2025",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "BIO2010",
+    "title": "Human Anatomy and Physiology",
+    "coordinator": "Aaron Isaacs",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "BIO3001",
+    "title": "Molecular Biology",
+    "coordinator": "Dr. Kathia Jimenez",
+    "corequisite": "TRUE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "PRA3003",
+    "prerequisiteCodes": "BIO2001+BIO2007"
+  },
+  {
+    "code": "BIO3002",
+    "title": "Ecophysiology",
+    "coordinator": "Dr. John Sloggett",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "BIO2001"
+  },
+  {
+    "code": "BIO3003",
+    "title": "Medical Microbiology",
+    "coordinator": "Frank Stassen",
+    "corequisite": "TRUE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "PRA3010",
+    "prerequisiteCodes": "BIO2001+BIO2007"
+  },
+  {
+    "code": "BIO3004",
+    "title": "Animal Behaviour",
+    "coordinator": "Dr. Linnea van Griethuijsen",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "BIO2004+BIO2005"
+  },
+  {
+    "code": "BIO3007",
+    "title": "Tropical Biology",
+    "coordinator": "Dr. Roy Erkens",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "BIO2002"
+  },
+  {
+    "code": "BIO3010",
+    "title": "Genomics, Proteomics and Other Omics Technologies",
+    "coordinator": "Birol Cabukusta",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "CHE1101",
+    "title": "Introduction to Chemistry",
+    "coordinator": "Dr. Chris Bahn",
+    "corequisite": "TRUE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "PRA1101",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "CHE2004",
+    "title": "Spectroscopy",
+    "coordinator": "Annelies van der Bok",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "CHE2009/CHE2001"
+  },
+  {
+    "code": "CHE2006",
+    "title": "Biochemistry",
+    "coordinator": "Prof. dr. L. Schurgers, Dr. A. Jaminon, Dr. S. Agten, N. Deckers",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "BIO1101/CHE1101"
+  },
+  {
+    "code": "CHE2007",
+    "title": "Solid State Chemistry",
+    "coordinator": "Dr. Giuditta Perversi",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "CHE2009",
+    "title": "Fundamentals of Organic Chemistry",
+    "coordinator": "Dr. Hanne Diliën",
+    "corequisite": "TRUE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "PRA2032",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "CHE2010",
+    "title": "General Chemistry",
+    "coordinator": "Dr. Chris Bahn",
+    "corequisite": "TRUE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "PRA2034",
+    "prerequisiteCodes": "CHE1101"
+  },
+  {
+    "code": "CHE2011",
+    "title": "Organic Chemistry",
+    "coordinator": "Dr. Hanne Diliën",
+    "corequisite": "TRUE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "PRA2033",
+    "prerequisiteCodes": "CHE2009"
+  },
+  {
+    "code": "CHE3006",
+    "title": "Quantum Chemistry",
+    "coordinator": "Dr. Veaceslav (Slava) Vieru",
+    "corequisite": "TRUE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "PRA3018",
+    "prerequisiteCodes": "MAT2006/MAT2009"
+  },
+  {
+    "code": "CHE3007",
+    "title": "Chemical Kinetics",
+    "coordinator": "Dr. Veaceslav (Slava) Vieru",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "MAT2006"
+  },
+  {
+    "code": "CHE3009",
+    "title": "Crystallography",
+    "coordinator": "Dr. Giuditta Perversi",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PRO1002"
+  },
+  {
+    "code": "CHE3010",
+    "title": "Inorganic Chemistry",
+    "coordinator": "Dr. Giuditta Perversi",
+    "corequisite": "TRUE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "PRA3028",
+    "prerequisiteCodes": "CHE2010"
+  },
+  {
+    "code": "CHE3011",
+    "title": "Instrumental analysis",
+    "coordinator": "Annelies van der Bok",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "CHE2004"
+  },
+  {
+    "code": "CHE3012",
+    "title": "Nanomaterials and Catalysis",
+    "coordinator": "Annelies van der Bok",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "CHE3010"
+  },
+  {
+    "code": "CHE3013",
+    "title": "Advanced Organic Chemistry",
+    "coordinator": "Matthew Baker",
+    "corequisite": "TRUE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "PRA3029",
+    "prerequisiteCodes": "CHE2011"
+  },
+  {
+    "code": "INT1101",
+    "title": "Introduction to Liberal Arts and Science",
+    "coordinator": "Dr. Hanne Diliën, Dr. Rocio Arreguin Campos",
+    "corequisite": "TRUE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "PRA1102",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "INT1003",
+    "title": "Introduction to Biomedical Engineering",
+    "coordinator": "Daan van Beek",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "INT1005",
+    "title": "Commercializing Science and Technology",
+    "coordinator": "Dr. Jermain Kaminski",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "INT1007",
+    "title": "Introduction to Earth Sciences",
+    "coordinator": "Dr. Jesse Hennekam",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "INT2007",
+    "title": "Science in Action",
+    "coordinator": "Jessica Mesman",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "INT2008",
+    "title": "Molecular Toxicology",
+    "coordinator": "Dr Misha Vrolijk",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "INT2009",
+    "title": "Biophysics",
+    "coordinator": "Dr. Anjusha Mathew",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "INT2010",
+    "title": "Principles of Mass Spectrometry",
+    "coordinator": "Dr. Ian Anthony",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "INT2012",
+    "title": "Archaeological Science",
+    "coordinator": "Dr. Kyle Jazwa",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "INT2013",
+    "title": "Fundamentals of Science Education",
+    "coordinator": "Dr. May Lee",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PRO1002"
+  },
+  {
+    "code": "INT2014",
+    "title": "Imaging Engineering",
+    "coordinator": "Dr. Gavin Hazell",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "INT3001",
+    "title": "The Philosophy of Technology",
+    "coordinator": "Massimiliano Simons",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PRO1002"
+  },
+  {
+    "code": "INT3002",
+    "title": "Advanced Microscopy: Theory and Applications",
+    "coordinator": "Dimitris Kapsokalyvas",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "INT3003",
+    "title": "Biomaterials",
+    "coordinator": "Dr. C. Mota & Dr. P. Wieringa",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "CHE2001"
+  },
+  {
+    "code": "INT3005",
+    "title": "Biobased Materials and Technology",
+    "coordinator": "Prof. Yvonne van der Meer, Dr. Katie Saralidze",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "CHE2011"
+  },
+  {
+    "code": "INT3007",
+    "title": "Systems Biology",
+    "coordinator": "Dr. Martina Summer-Kutmon",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PRO1002"
+  },
+  {
+    "code": "INT3008",
+    "title": "Regenerative Medicine",
+    "coordinator": "Dr. D. Kilian",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "BIO2001+CHE2001"
+  },
+  {
+    "code": "INT3009",
+    "title": "Chemical Ecology",
+    "coordinator": "Dr. John Sloggett",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "BIO2001/CHE2009"
+  },
+  {
+    "code": "INT3011",
+    "title": "Landscape Archaeology",
+    "coordinator": "Dr. Kyle Jazwa",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PRA2009/INT2012/PRA2024"
+  },
+  {
+    "code": "INT3012",
+    "title": "Science Education: Model-Based Inquiry",
+    "coordinator": "Dr. May Lee",
+    "corequisite": "TRUE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "PRA3026",
+    "prerequisiteCodes": "INT2013"
+  },
+  {
+    "code": "INT3014",
+    "title": "Conservation Palaeobiology",
+    "coordinator": "Prof. Dr. Frank Wesselingh, Dr. Jesse Hennekam",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PRA1008/INT1007"
+  },
+  {
+    "code": "INT3201",
+    "title": "Island Studies: Life and Landscape",
+    "coordinator": "Dr. Jesse Hennekam, Dr. Kyle Jazwa, Dr. Phil Klahs, George Mesher",
+    "corequisite": "TRUE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "INT3202+PRA3201",
+    "prerequisiteCodes": "PRA2009+INT1007+INT2012"
+  },
+  {
+    "code": "INT3202",
+    "title": "Island Studies: The Mediterranean Region",
+    "coordinator": "Dr. Jesse Hennekam, Dr. Kyle Jazwa, Dr. Phil Klahs, George Mesher",
+    "corequisite": "TRUE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "INT3201+PRA3201",
+    "prerequisiteCodes": "PRA2009+INT1007+INT2012"
+  },
+  {
+    "code": "MAT1006",
+    "title": "Applied Statistics",
+    "coordinator": "Matthijs Hermeling",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "MAT1007",
+    "title": "Mathematical tools for scientists",
+    "coordinator": "Dr. Mariet Hofstee",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "MAT2004",
+    "title": "Linear Algebra",
+    "coordinator": "Martin Frohn",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "MAT2005",
+    "title": "Probability and Statistics",
+    "coordinator": "Dr. Otti D'Huys",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "MAT2006"
+  },
+  {
+    "code": "MAT2006",
+    "title": "Calculus",
+    "coordinator": "Niloufar Yousefimanesh",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "MAT2007",
+    "title": "Introduction to Programming",
+    "coordinator": "Panos Christakoglou",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "MAT2008",
+    "title": "Differential Equations",
+    "coordinator": "Dr. Mariet Hofstee",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "MAT2006"
+  },
+  {
+    "code": "MAT2009",
+    "title": "Multivariable Calculus",
+    "coordinator": "Dr. Mariet Hofstee",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "MAT2006"
+  },
+  {
+    "code": "NEU1001",
+    "title": "Introduction to Neuroscience: Perception",
+    "coordinator": "Dr. L. de Nijs",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "NEU1003",
+    "title": "Computational Neuroscience",
+    "coordinator": "Prof. Dr. Renaud B. Jolivet",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "NEU2003",
+    "title": "Neuroethology",
+    "coordinator": "Dr. Linnea van Griethuijsen",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "NEU1001/NEU1002/BIO3004"
+  },
+  {
+    "code": "NEU2004",
+    "title": "Neural Circuits and Dynamics",
+    "coordinator": "Luke Edwards",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "NEU2005",
+    "title": "Systems Neuroscience",
+    "coordinator": "Daan van Beek",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "NEU3002",
+    "title": "Brain-Inspired Engineering: From Neural Principles to Technology",
+    "coordinator": "Prof. Dr. Renaud B. Jolivet",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "NEU1003/INT1003"
+  },
+  {
+    "code": "NEU3003",
+    "title": "Brain-Body Interactions",
+    "coordinator": "Michelle Moerel",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "NEU1001"
+  },
+  {
+    "code": "PHY1101",
+    "title": "Introduction to Physics",
+    "coordinator": "Dr. Lorenzo Reverberi",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PHY1003",
+    "title": "Mechanics",
+    "coordinator": "Dr. Lorenzo Reverberi",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PHY1101"
+  },
+  {
+    "code": "PHY2002",
+    "title": "Thermodynamics and Statistical Mechanics",
+    "coordinator": "Dr. Veaceslav (Slava) Vieru",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "MAT2006/MAT2009"
+  },
+  {
+    "code": "PHY2003",
+    "title": "Vibrations and Waves",
+    "coordinator": "Dr. Jessica Steinlechner",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PHY2001/PHY1003"
+  },
+  {
+    "code": "PHY2004",
+    "title": "Electricity and magnetism",
+    "coordinator": "Dr. Stefan Danilishin",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "MAT2009"
+  },
+  {
+    "code": "PHY2005",
+    "title": "Fundamentals of Quantum Mechanics",
+    "coordinator": "Dr. Keri Vos",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "MAT2004+(MAT2006/MAT2008)"
+  },
+  {
+    "code": "PHY2006",
+    "title": "Electronics",
+    "coordinator": "Dr. Bart van Grinsven",
+    "corequisite": "TRUE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "PRA2006",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PHY2007",
+    "title": "Optics",
+    "coordinator": "Dr. Sebastian Steinlechner",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PHY2008",
+    "title": "Solar System Astronomy",
+    "coordinator": "Mr. Chad Ellington",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PHY2009",
+    "title": "Stellar Astronomy",
+    "coordinator": "Mr. Chad Ellington",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PHY2010",
+    "title": "Galactic Astronomy",
+    "coordinator": "Mr. Chad Ellington",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PHY2011",
+    "title": "Special Relativity",
+    "coordinator": "Jacco de Vries",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PHY2001/PHY1003"
+  },
+  {
+    "code": "PHY2012",
+    "title": "Structure of Matter",
+    "coordinator": "Dr. Alex Amato",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PHY2002"
+  },
+  {
+    "code": "PHY3001",
+    "title": "Quantum Mechanics",
+    "coordinator": "Dr. Keri Vos",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PHY2005"
+  },
+  {
+    "code": "PHY3004",
+    "title": "Elementary Particle Physics",
+    "coordinator": "Prof. Marcel Merk and Dr. Jacco de Vries",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PHY2005+MAT2004"
+  },
+  {
+    "code": "PHY3005",
+    "title": "Electrodynamics",
+    "coordinator": "Dr. Stefan Danilishin",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PHY2004"
+  },
+  {
+    "code": "PHY3006",
+    "title": "General Relativity",
+    "coordinator": "Dr. Gideon Koekoek",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PHY3002/PHY2011"
+  },
+  {
+    "code": "PHY3008",
+    "title": "Cosmology",
+    "coordinator": "Dr. Lorenzo Reverberi",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "MAT2009+PHY2011"
+  },
+  {
+    "code": "PHY3009",
+    "title": "Hamiltonian & Lagrangian Mechanics",
+    "coordinator": "Dr. Gideon Koekoek",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PHY2001/PHY1003"
+  },
+  {
+    "code": "PHY3010",
+    "title": "Lasers and Applications",
+    "coordinator": "Dr. Anna Green",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PHY2005"
+  },
+  {
+    "code": "PRA1101",
+    "title": "Introduction to Scientific Research I",
+    "coordinator": "Dr. Chris Pawley and Dr. Erik Steen Redeker",
+    "corequisite": "TRUE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "CHE1101+PHY1101",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA1102",
+    "title": "Introduction to Scientific Research II",
+    "coordinator": "Suzan du Pree",
+    "corequisite": "TRUE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "BIO1101+INT1101",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA1003",
+    "title": "Basic Physics Laboratory",
+    "coordinator": "Suzan du Pree and Dr. Chris Pawley",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA1005",
+    "title": "Data Collection Techniques in Neuroscience",
+    "coordinator": "Dr. Mark Roberts",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA1008",
+    "title": "Basics of Palaeontology",
+    "coordinator": "Dr. Jesse Hennekam",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA1009",
+    "title": "Neuro Anatomy Skills",
+    "coordinator": "Daan van Beek",
+    "corequisite": "TRUE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "NEU1001",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA2003",
+    "title": "Programming",
+    "coordinator": "Panos Christakoglou",
+    "corequisite": "TRUE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "MAT2007",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA2005",
+    "title": "Advanced Molecular Laboratory Skills",
+    "coordinator": "Dr. Erik Steen Redeker",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PRA1101"
+  },
+  {
+    "code": "PRA2006",
+    "title": "Electronics Lab",
+    "coordinator": "Dr. Bart van Grinsven",
+    "corequisite": "TRUE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "PHY2006",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA2007",
+    "title": "Physics Laboratory",
+    "coordinator": "Dr. Chris Pawley and Dr. Maarten van Veghel",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PRA1003"
+  },
+  {
+    "code": "PRA2008",
+    "title": "Physical Chemistry",
+    "coordinator": "Dr. Veaceslav (Slava) Vieru",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PRA2034"
+  },
+  {
+    "code": "PRA2009",
+    "title": "Field Skills in Biology",
+    "coordinator": "Dr. Phil Klahs",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA2010",
+    "title": "Synthetic Biology",
+    "coordinator": "Dr. Erik Steen Redeker",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PRA2005+PRA2014"
+  },
+  {
+    "code": "PRA2011",
+    "title": "Exploring the World of Plants",
+    "coordinator": "Dr. Phil Klahs",
+    "corequisite": "TRUE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "BIO2003",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA2013",
+    "title": "Practical Zoology",
+    "coordinator": "Dr. John Sloggett",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PRA1102+BIO2004"
+  },
+  {
+    "code": "PRA2014",
+    "title": "Genetics",
+    "coordinator": "Dr. David Cortens and Servé Olieslagers",
+    "corequisite": "TRUE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "BIO2007",
+    "prerequisiteCodes": "BIO2001"
+  },
+  {
+    "code": "PRA2015",
+    "title": "Advanced Academic Skills",
+    "coordinator": "Dr. Kyle Jazwa",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA2018",
+    "title": "Capita Selecta in Modern Sciences",
+    "coordinator": "Panos Christakoglou",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA2019",
+    "title": "Natural Science Ilustration",
+    "coordinator": "Dr. Phil Klahs",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA2020",
+    "title": "Practical Mass Spectrometry",
+    "coordinator": "Dr. A. Mathew",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "INT2010"
+  },
+  {
+    "code": "PRA2023",
+    "title": "Astronomical Observing Techniques",
+    "coordinator": "Mr. Chad Ellington",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA2025",
+    "title": "Vertebrate Functional Morphology",
+    "coordinator": "Prof. Dr. Leon Claessens and Dr. Jesse Hennekam",
+    "corequisite": "TRUE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "BIO2008",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA2026",
+    "title": "R programming language",
+    "coordinator": "Dr. Phil Klahs",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA2027",
+    "title": "Fundamentals of Science Communication",
+    "coordinator": "Dr. May Lee",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PRO1002"
+  },
+  {
+    "code": "PRA2028",
+    "title": "Mathematics and Art",
+    "coordinator": "Dr. Mariet Hofstee",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA2029",
+    "title": "3D Visualizations and Transformations",
+    "coordinator": "Dr. May Lee",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA2030",
+    "title": "Introduction in Mycology",
+    "coordinator": "Dr. Aleksander Umanets",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA2031",
+    "title": "Python Programming Language",
+    "coordinator": "Dr. Ruth Großeholz",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA2032",
+    "title": "Fundamentals of Organic Chemistry Laboratory",
+    "coordinator": "Dr. Hanne Diliën",
+    "corequisite": "TRUE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "CHE2009",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA2033",
+    "title": "Organic Chemistry Laboratory",
+    "coordinator": "Dr. Hanne Diliën",
+    "corequisite": "TRUE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "CHE2011",
+    "prerequisiteCodes": "PRA2032"
+  },
+  {
+    "code": "PRA2034",
+    "title": "General Chemistry Laboratory",
+    "coordinator": "Dr. Chris Bahn",
+    "corequisite": "TRUE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "CHE2010",
+    "prerequisiteCodes": "PRA1101/PRA1102"
+  },
+  {
+    "code": "PRA3002",
+    "title": "Advanced Physics Laboratory",
+    "coordinator": "Dr. Chris Pawley",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PRA1003+PRA2007"
+  },
+  {
+    "code": "PRA3003",
+    "title": "Molecular Biology",
+    "coordinator": "Dr. Kathia Jimenez",
+    "corequisite": "TRUE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "BIO3001",
+    "prerequisiteCodes": "PRA2014"
+  },
+  {
+    "code": "PRA3005",
+    "title": "Polymer Processing",
+    "coordinator": "Eveline Maassen",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "CHE2001"
+  },
+  {
+    "code": "PRA3006",
+    "title": "Programming in the Life Sciences",
+    "coordinator": "Dr. Rianne Fijten and Dr. Egon Willighagen",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "MAT2007/PRA2003"
+  },
+  {
+    "code": "PRA3010",
+    "title": "Microbiology",
+    "coordinator": "Frank Stassen",
+    "corequisite": "TRUE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "BIO3003",
+    "prerequisiteCodes": "BIO2001+BIO2007"
+  },
+  {
+    "code": "PRA3011",
+    "title": "The Limburg Landscape",
+    "coordinator": "Dr. Phil Klahs",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PRA2009"
+  },
+  {
+    "code": "PRA3012",
+    "title": "Advanced Electronics",
+    "coordinator": "Dr. Bart van Grinsven",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PRA2006+PHY2006"
+  },
+  {
+    "code": "PRA3014",
+    "title": "Spectroscopic Methods",
+    "coordinator": "Dr. Annelies van der Bok",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "CHE2004"
+  },
+  {
+    "code": "PRA3017",
+    "title": "Applied Cell Biology",
+    "coordinator": "Dr. Silvia Bolognin",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PRA2014"
+  },
+  {
+    "code": "PRA3018",
+    "title": "Molecular Modeling",
+    "coordinator": "Dr. Veaceslav (Slava) Vieru",
+    "corequisite": "TRUE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "CHE3006",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA3021",
+    "title": "Topics in Scientific Computing",
+    "coordinator": "Dr. Marcin Pietrasik",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "MAT2004+MAT2006+MAT2007"
+  },
+  {
+    "code": "PRA3022",
+    "title": "IGEM Competition",
+    "coordinator": "Dr. Erik Steen Redeker",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PRO3022"
+  },
+  {
+    "code": "PRA3023",
+    "title": "Plant Physiology and Microbiomes",
+    "coordinator": "Dr. Alexander Umanets",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "BIO2003"
+  },
+  {
+    "code": "PRA3024",
+    "title": "Analysis of Big Data in Physics",
+    "coordinator": "Dr. Jacco de Vries and Dr. Maarten van Veghel",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "MAT2007"
+  },
+  {
+    "code": "PRA3025",
+    "title": "Science Communication: Curating Science Exhibits",
+    "coordinator": "Dr. May Lee and Dr. Kyle Jazwa",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PRA2027"
+  },
+  {
+    "code": "PRA3026",
+    "title": "Science Teaching Skills",
+    "coordinator": "Dr. May Lee",
+    "corequisite": "TRUE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "INT3012",
+    "prerequisiteCodes": "INT2013"
+  },
+  {
+    "code": "PRA3027",
+    "title": "Advanced Functional Morphology",
+    "coordinator": "Prof. Dr. Leon Claessens and Dr. Jesse Hennekam",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PRA2025"
+  },
+  {
+    "code": "PRA3028",
+    "title": "Inorganic Synthesis",
+    "coordinator": "Dr. Giuditta Perversi",
+    "corequisite": "TRUE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "CHE3010",
+    "prerequisiteCodes": "PRA2034"
+  },
+  {
+    "code": "PRA3029",
+    "title": "Advanced Organic Chemistry Laboratory",
+    "coordinator": "Matthew Baker",
+    "corequisite": "TRUE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "CHE3013",
+    "prerequisiteCodes": "CHE2011"
+  },
+  {
+    "code": "PRA3030",
+    "title": "Finite Element Method",
+    "coordinator": "Harm Askes and Gerco Onderwater",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA3031",
+    "title": "Statistical Modelling",
+    "coordinator": "João Vargas",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRA3201",
+    "title": "Island Studies: Fieldwork and Data Collection",
+    "coordinator": "Dr. Jesse Hennekam and Dr. Kyle Jazwa and Dr. Phil Klahs and George Mesher",
+    "corequisite": "TRUE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "INT3201+INT3202",
+    "prerequisiteCodes": "PRA2009+INT1007+INT2012"
+  },
+  {
+    "code": "PRA3503",
+    "title": "Microbiome Analysis",
+    "coordinator": "Dr. Alexander Umanets",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "INT3007/MAT2007"
+  },
+  {
+    "code": "PRA3504",
+    "title": "The Academic Life Cycle",
+    "coordinator": "Dr. Kyle Jazwa",
+    "corequisite": "FALSE",
+    "prerequisite": "TRUE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": "PRA2015"
+  },
+  {
+    "code": "PRO1101",
+    "title": "Introduction to Project Period",
+    "coordinator": "Dr. Kyle Jazwa and Dr. May Lee",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRO1000",
+    "title": "Research Project",
+    "coordinator": "Lorenzo Reverberi",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "PRO2000/3000",
+    "title": "Research Project",
+    "coordinator": "Lorenzo Reverberi",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  },
+  {
+    "code": "",
+    "title": "Bachelor Thesis Research",
+    "coordinator": "Panos Christakoglou",
+    "corequisite": "FALSE",
+    "prerequisite": "FALSE",
+    "corequisiteOf": "",
+    "prerequisiteCodes": ""
+  }
+]

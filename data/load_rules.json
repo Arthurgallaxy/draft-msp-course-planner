@@ -1,0 +1,116 @@
+{
+  "0": {
+    "0": {
+      "allowed": true
+    },
+    "1": {
+      "allowed": true
+    },
+    "2": {
+      "allowed": true
+    },
+    "3": {
+      "allowed": true
+    },
+    "4": {
+      "allowed": true
+    },
+    "5": {
+      "allowed": true,
+      "minGpa": 8,
+      "label": "Cum GPA at least 8"
+    }
+  },
+  "1": {
+    "0": {
+      "allowed": true
+    },
+    "1": {
+      "allowed": true
+    },
+    "2": {
+      "allowed": true
+    },
+    "3": {
+      "allowed": true
+    },
+    "4": {
+      "allowed": false
+    },
+    "5": {
+      "allowed": false
+    }
+  },
+  "2": {
+    "0": {
+      "allowed": true
+    },
+    "1": {
+      "allowed": true
+    },
+    "2": {
+      "allowed": true,
+      "minGpa": 7,
+      "label": "Cum GPA at least 7"
+    },
+    "3": {
+      "allowed": true,
+      "minGpa": 8,
+      "label": "Cum GPA at least 8"
+    },
+    "4": {
+      "allowed": false
+    },
+    "5": {
+      "allowed": false
+    }
+  },
+  "3": {
+    "0": {
+      "allowed": true,
+      "minGpa": 6.5,
+      "label": "Cum GPA at least 6.5"
+    },
+    "1": {
+      "allowed": true,
+      "minGpa": 7,
+      "label": "Cum GPA at least 7"
+    },
+    "2": {
+      "allowed": true,
+      "minGpa": 8,
+      "label": "Cum GPA at least 8"
+    },
+    "3": {
+      "allowed": false
+    },
+    "4": {
+      "allowed": false
+    },
+    "5": {
+      "allowed": false
+    }
+  },
+  "4": {
+    "0": {
+      "allowed": true,
+      "minGpa": 7,
+      "label": "Cum GPA at least 7"
+    },
+    "1": {
+      "allowed": false
+    },
+    "2": {
+      "allowed": false
+    },
+    "3": {
+      "allowed": false
+    },
+    "4": {
+      "allowed": false
+    },
+    "5": {
+      "allowed": false
+    }
+  }
+}

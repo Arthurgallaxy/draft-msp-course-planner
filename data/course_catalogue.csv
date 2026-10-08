@@ -1,0 +1,149 @@
+course_catalogue
+code;title;coordinator;corequisite;prerequisite;corequisiteof;prerequisitecode
+BIO1101;Introduction to Biology;David Cortens;TRUE;FALSE;PRA1102;
+BIO2001;Cell Biology;Prof. dr. Martijn van Griensven and Dr Aart van Apeldoorn;FALSE;FALSE;;
+BIO2002;Ecology;Dr. John Sloggett;FALSE;FALSE;;
+BIO2003;General Botany;Dr. Phil Klahs;TRUE;FALSE;PRA2011;
+BIO2004;General Zoology;Dr. John Sloggett;FALSE;FALSE;;
+BIO2005;Evolutionary Biology;Dr. Linnea van Griethuijsen;FALSE;FALSE;;
+BIO2006;Biotechnology;Dr. David Cortens;FALSE;TRUE;;BIO2007+PRA2014
+BIO2007;Genetics;Prof. dr. Leon de Windt;TRUE;TRUE;PRA2014;BIO2001
+BIO2008;Great Transformations in Vertebrate Evolution;Prof. Dr. Leon Claessens;TRUE;FALSE;PRA2025;
+BIO2010;Human Anatomy and Physiology;Aaron Isaacs;FALSE;FALSE;;
+BIO3001;Molecular Biology;Dr. Kathia Jimenez;TRUE;TRUE;PRA3003;BIO2001+BIO2007
+BIO3002;Ecophysiology;Dr. John Sloggett;FALSE;TRUE;;BIO2001
+BIO3003;Medical Microbiology;Frank Stassen;TRUE;TRUE;PRA3010;BIO2001+BIO2007
+BIO3004;Animal Behaviour;Dr. Linnea van Griethuijsen;FALSE;TRUE;;BIO2004+BIO2005
+BIO3007;Tropical Biology;Dr. Roy Erkens;FALSE;TRUE;;BIO2002
+BIO3010;Genomics, Proteomics and Other Omics Technologies;Birol Cabukusta;FALSE;FALSE;;
+CHE1101;Introduction to Chemistry;Dr. Chris Bahn;TRUE;FALSE;PRA1101;
+CHE2004;Spectroscopy;Annelies van der Bok;FALSE;TRUE;;CHE2009/CHE2001
+CHE2006;Biochemistry;Prof. dr. L. Schurgers, Dr. A. Jaminon, Dr. S. Agten, N. Deckers;FALSE;TRUE;;BIO1101/CHE1101
+CHE2007;Solid State Chemistry;Dr. Giuditta Perversi;FALSE;FALSE;;
+CHE2009;Fundamentals of Organic Chemistry;Dr. Hanne Diliën;TRUE;FALSE;PRA2032;
+CHE2010;General Chemistry;Dr. Chris Bahn;TRUE;TRUE;PRA2034;CHE1101
+CHE2011;Organic Chemistry;Dr. Hanne Diliën;TRUE;TRUE;PRA2033;CHE2009
+CHE3006;Quantum Chemistry;Dr. Veaceslav (Slava) Vieru;TRUE;TRUE;PRA3018;MAT2006/MAT2009
+CHE3007;Chemical Kinetics;Dr. Veaceslav (Slava) Vieru;FALSE;TRUE;;MAT2006
+CHE3009;Crystallography;Dr. Giuditta Perversi;FALSE;TRUE;;PRO1002
+CHE3010;Inorganic Chemistry;Dr. Giuditta Perversi;TRUE;TRUE;PRA3028;CHE2010
+CHE3011;Instrumental analysis;Annelies van der Bok;FALSE;TRUE;;CHE2004
+CHE3012;Nanomaterials and Catalysis;Annelies van der Bok;FALSE;TRUE;;CHE3010
+CHE3013;Advanced Organic Chemistry;Matthew Baker;TRUE;TRUE;PRA3029;CHE2011
+INT1101;Introduction to Liberal Arts and Science;Dr. Hanne Diliën, Dr. Rocio Arreguin Campos;TRUE;FALSE;PRA1102;
+INT1003;Introduction to Biomedical Engineering;Daan van Beek;FALSE;FALSE;;
+INT1005;Commercializing Science and Technology;Dr. Jermain Kaminski;FALSE;FALSE;;
+INT1007;Introduction to Earth Sciences;Dr. Jesse Hennekam;FALSE;FALSE;;
+INT2007;Science in Action;Jessica Mesman;FALSE;FALSE;;
+INT2008;Molecular Toxicology;Dr Misha Vrolijk;FALSE;FALSE;;
+INT2009;Biophysics;Dr. Anjusha Mathew;FALSE;FALSE;;
+INT2010;Principles of Mass Spectrometry;Dr. Ian Anthony;FALSE;FALSE;;
+INT2012;Archaeological Science;Dr. Kyle Jazwa;FALSE;FALSE;;
+INT2013;Fundamentals of Science Education;Dr. May Lee;FALSE;TRUE;;PRO1002
+INT2014;Imaging Engineering;Dr. Gavin Hazell;FALSE;FALSE;;
+INT3001;The Philosophy of Technology;Massimiliano Simons;FALSE;TRUE;;PRO1002
+INT3002;Advanced Microscopy: Theory and Applications;Dimitris Kapsokalyvas;FALSE;FALSE;;
+INT3003;Biomaterials;Dr. C. Mota & Dr. P. Wieringa;FALSE;TRUE;;CHE2001
+INT3005;Biobased Materials and Technology;Prof. Yvonne van der Meer, Dr. Katie Saralidze;FALSE;TRUE;;CHE2011
+INT3007;Systems Biology;Dr. Martina Summer-Kutmon;FALSE;TRUE;;PRO1002
+INT3008;Regenerative Medicine;Dr. D. Kilian;FALSE;TRUE;;BIO2001+CHE2001
+INT3009;Chemical Ecology;Dr. John Sloggett;FALSE;TRUE;;BIO2001/CHE2009
+INT3011;Landscape Archaeology;Dr. Kyle Jazwa;FALSE;TRUE;;PRA2009/INT2012/PRA2024
+INT3012;Science Education: Model-Based Inquiry;Dr. May Lee;TRUE;TRUE;PRA3026;INT2013
+INT3014;Conservation Palaeobiology;Prof. Dr. Frank Wesselingh, Dr. Jesse Hennekam;FALSE;TRUE;;PRA1008/INT1007
+INT3201;Island Studies: Life and Landscape;Dr. Jesse Hennekam, Dr. Kyle Jazwa, Dr. Phil Klahs, George Mesher;TRUE;TRUE;INT3202+PRA3201;PRA2009+INT1007+INT2012
+INT3202;Island Studies: The Mediterranean Region;Dr. Jesse Hennekam, Dr. Kyle Jazwa, Dr. Phil Klahs, George Mesher;TRUE;TRUE;INT3201+PRA3201;PRA2009+INT1007+INT2012
+MAT1006;Applied Statistics;Matthijs Hermeling;FALSE;FALSE;;
+MAT1007;Mathematical tools for scientists;Dr. Mariet Hofstee;FALSE;FALSE;;
+MAT2004;Linear Algebra;Martin Frohn;FALSE;FALSE;;
+MAT2005;Probability and Statistics;Dr. Otti D'Huys;FALSE;TRUE;;MAT2006
+MAT2006;Calculus;Niloufar Yousefimanesh;FALSE;FALSE;;
+MAT2007;Introduction to Programming;Panos Christakoglou;FALSE;FALSE;;
+MAT2008;Differential Equations;Dr. Mariet Hofstee;FALSE;TRUE;;MAT2006
+MAT2009;Multivariable Calculus;Dr. Mariet Hofstee;FALSE;TRUE;;MAT2006
+NEU1001;Introduction to Neuroscience: Perception;Dr. L. de Nijs;FALSE;FALSE;;
+NEU1003;Computational Neuroscience;Prof. Dr. Renaud B. Jolivet;FALSE;FALSE;;
+NEU2003;Neuroethology;Dr. Linnea van Griethuijsen;FALSE;TRUE;;NEU1001/NEU1002/BIO3004
+NEU2004;Neural Circuits and Dynamics;Luke Edwards;FALSE;FALSE;;
+NEU2005;Systems Neuroscience;Daan van Beek;FALSE;FALSE;;
+NEU3002;Brain-Inspired Engineering: From Neural Principles to Technology;Prof. Dr. Renaud B. Jolivet;FALSE;TRUE;;NEU1003/INT1003
+NEU3003;Brain-Body Interactions;Michelle Moerel;FALSE;TRUE;;NEU1001
+PHY1101;Introduction to Physics;Dr. Lorenzo Reverberi;FALSE;FALSE;;
+PHY1003;Mechanics;Dr. Lorenzo Reverberi;FALSE;TRUE;;PHY1101
+PHY2002;Thermodynamics and Statistical Mechanics;Dr. Veaceslav (Slava) Vieru;FALSE;TRUE;;MAT2006/MAT2009
+PHY2003;Vibrations and Waves;Dr. Jessica Steinlechner;FALSE;TRUE;;PHY2001/PHY1003
+PHY2004;Electricity and magnetism;Dr. Stefan Danilishin;FALSE;TRUE;;MAT2009
+PHY2005;Fundamentals of Quantum Mechanics;Dr. Keri Vos;FALSE;TRUE;;MAT2004+(MAT2006/MAT2008)
+PHY2006;Electronics;Dr. Bart van Grinsven;TRUE;FALSE;PRA2006;
+PHY2007;Optics;Dr. Sebastian Steinlechner;FALSE;FALSE;;
+PHY2008;Solar System Astronomy;Mr. Chad Ellington;FALSE;FALSE;;
+PHY2009;Stellar Astronomy;Mr. Chad Ellington;FALSE;FALSE;;
+PHY2010;Galactic Astronomy;Mr. Chad Ellington;FALSE;FALSE;;
+PHY2011;Special Relativity;Jacco de Vries;FALSE;TRUE;;PHY2001/PHY1003
+PHY2012;Structure of Matter;Dr. Alex Amato;FALSE;TRUE;;PHY2002
+PHY3001;Quantum Mechanics;Dr. Keri Vos;FALSE;TRUE;;PHY2005
+PHY3004;Elementary Particle Physics;Prof. Marcel Merk and Dr. Jacco de Vries;FALSE;TRUE;;PHY2005+MAT2004
+PHY3005;Electrodynamics;Dr. Stefan Danilishin;FALSE;TRUE;;PHY2004
+PHY3006;General Relativity;Dr. Gideon Koekoek;FALSE;TRUE;;PHY3002/PHY2011
+PHY3008;Cosmology;Dr. Lorenzo Reverberi;FALSE;TRUE;;MAT2009+PHY2011
+PHY3009;Hamiltonian & Lagrangian Mechanics;Dr. Gideon Koekoek;FALSE;TRUE;;PHY2001/PHY1003
+PHY3010;Lasers and Applications;Dr. Anna Green;FALSE;TRUE;;PHY2005
+PRA1101;Introduction to Scientific Research I;Dr. Chris Pawley and Dr. Erik Steen Redeker;TRUE;FALSE;CHE1101+PHY1101;
+PRA1102;Introduction to Scientific Research II;Suzan du Pree;TRUE;FALSE;BIO1101+INT1101;
+PRA1003;Basic Physics Laboratory;Suzan du Pree and Dr. Chris Pawley;FALSE;FALSE;;
+PRA1005;Data Collection Techniques in Neuroscience;Dr. Mark Roberts;FALSE;FALSE;;
+PRA1008;Basics of Palaeontology;Dr. Jesse Hennekam;FALSE;FALSE;;
+PRA1009;Neuro Anatomy Skills;Daan van Beek;TRUE;FALSE;NEU1001;
+PRA2003;Programming;Panos Christakoglou;TRUE;FALSE;MAT2007;
+PRA2005;Advanced Molecular Laboratory Skills;Dr. Erik Steen Redeker;FALSE;TRUE;;PRA1101
+PRA2006;Electronics Lab;Dr. Bart van Grinsven;TRUE;FALSE;PHY2006;
+PRA2007;Physics Laboratory;Dr. Chris Pawley and Dr. Maarten van Veghel;FALSE;TRUE;;PRA1003
+PRA2008;Physical Chemistry;Dr. Veaceslav (Slava) Vieru;FALSE;TRUE;;PRA2034
+PRA2009;Field Skills in Biology;Dr. Phil Klahs;FALSE;FALSE;;
+PRA2010;Synthetic Biology;Dr. Erik Steen Redeker;FALSE;TRUE;;PRA2005+PRA2014
+PRA2011;Exploring the World of Plants;Dr. Phil Klahs;TRUE;FALSE;BIO2003;
+PRA2013;Practical Zoology;Dr. John Sloggett;FALSE;TRUE;;PRA1102+BIO2004
+PRA2014;Genetics;Dr. David Cortens and Servé Olieslagers;TRUE;TRUE;BIO2007;BIO2001
+PRA2015;Advanced Academic Skills;Dr. Kyle Jazwa;FALSE;FALSE;;
+PRA2018;Capita Selecta in Modern Sciences;Panos Christakoglou;FALSE;FALSE;;
+PRA2019;Natural Science Ilustration;Dr. Phil Klahs;FALSE;FALSE;;
+PRA2020;Practical Mass Spectrometry;Dr. A. Mathew;FALSE;TRUE;;INT2010
+PRA2023;Astronomical Observing Techniques;Mr. Chad Ellington;FALSE;FALSE;;
+PRA2025;Vertebrate Functional Morphology;Prof. Dr. Leon Claessens and Dr. Jesse Hennekam;TRUE;FALSE;BIO2008;
+PRA2026;R programming language;Dr. Phil Klahs;FALSE;FALSE;;
+PRA2027;Fundamentals of Science Communication;Dr. May Lee;FALSE;TRUE;;PRO1002
+PRA2028;Mathematics and Art;Dr. Mariet Hofstee;FALSE;FALSE;;
+PRA2029;3D Visualizations and Transformations;Dr. May Lee;FALSE;FALSE;;
+PRA2030;Introduction in Mycology;Dr. Aleksander Umanets;FALSE;FALSE;;
+PRA2031;Python Programming Language;Dr. Ruth Großeholz;FALSE;FALSE;;
+PRA2032;Fundamentals of Organic Chemistry Laboratory;Dr. Hanne Diliën;TRUE;FALSE;CHE2009;
+PRA2033;Organic Chemistry Laboratory;Dr. Hanne Diliën;TRUE;TRUE;CHE2011;PRA2032
+PRA2034;General Chemistry Laboratory;Dr. Chris Bahn;TRUE;TRUE;CHE2010;PRA1101/PRA1102
+PRA3002;Advanced Physics Laboratory;Dr. Chris Pawley;FALSE;TRUE;;PRA1003+PRA2007
+PRA3003;Molecular Biology;Dr. Kathia Jimenez;TRUE;TRUE;BIO3001;PRA2014
+PRA3005;Polymer Processing;Eveline Maassen;FALSE;TRUE;;CHE2001
+PRA3006;Programming in the Life Sciences;Dr. Rianne Fijten and Dr. Egon Willighagen;FALSE;TRUE;;MAT2007/PRA2003
+PRA3010;Microbiology;Frank Stassen;TRUE;TRUE;BIO3003;BIO2001+BIO2007
+PRA3011;The Limburg Landscape;Dr. Phil Klahs;FALSE;TRUE;;PRA2009
+PRA3012;Advanced Electronics;Dr. Bart van Grinsven;FALSE;TRUE;;PRA2006+PHY2006
+PRA3014;Spectroscopic Methods;Dr. Annelies van der Bok;FALSE;TRUE;;CHE2004
+PRA3017;Applied Cell Biology;Dr. Silvia Bolognin;FALSE;TRUE;;PRA2014
+PRA3018;Molecular Modeling;Dr. Veaceslav (Slava) Vieru;TRUE;FALSE;CHE3006;
+PRA3021;Topics in Scientific Computing;Dr. Marcin Pietrasik;FALSE;TRUE;;MAT2004+MAT2006+MAT2007
+PRA3022;IGEM Competition;Dr. Erik Steen Redeker;FALSE;TRUE;;PRO3022
+PRA3023;Plant Physiology and Microbiomes;Dr. Alexander Umanets;FALSE;TRUE;;BIO2003
+PRA3024;Analysis of Big Data in Physics;Dr. Jacco de Vries and Dr. Maarten van Veghel;FALSE;TRUE;;MAT2007
+PRA3025;Science Communication: Curating Science Exhibits;Dr. May Lee and Dr. Kyle Jazwa;FALSE;TRUE;;PRA2027
+PRA3026;Science Teaching Skills;Dr. May Lee;TRUE;TRUE;INT3012;INT2013
+PRA3027;Advanced Functional Morphology;Prof. Dr. Leon Claessens and Dr. Jesse Hennekam;FALSE;TRUE;;PRA2025
+PRA3028;Inorganic Synthesis;Dr. Giuditta Perversi;TRUE;TRUE;CHE3010;PRA2034
+PRA3029;Advanced Organic Chemistry Laboratory;Matthew Baker;TRUE;TRUE;CHE3013;CHE2011
+PRA3030;Finite Element Method;Harm Askes and Gerco Onderwater;FALSE;FALSE;;
+PRA3031;Statistical Modelling;João Vargas;FALSE;FALSE;;
+PRA3201;Island Studies: Fieldwork and Data Collection;Dr. Jesse Hennekam and Dr. Kyle Jazwa and Dr. Phil Klahs and George Mesher;TRUE;TRUE;INT3201+INT3202;PRA2009+INT1007+INT2012
+PRA3503;Microbiome Analysis;Dr. Alexander Umanets;FALSE;TRUE;;INT3007/MAT2007
+PRA3504;The Academic Life Cycle;Dr. Kyle Jazwa;FALSE;TRUE;;PRA2015
+PRO1101;Introduction to Project Period;Dr. Kyle Jazwa and Dr. May Lee;FALSE;FALSE;;
+PRO1000;Research Project;Lorenzo Reverberi;FALSE;FALSE;;
+PRO2000/3000;Research Project;Lorenzo Reverberi;FALSE;FALSE;;
+;Bachelor Thesis Research;Panos Christakoglou;FALSE;FALSE;;

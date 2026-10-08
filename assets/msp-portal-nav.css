@@ -1,0 +1,108 @@
+/* MSP app switcher. Isolated to the existing Course Planner sidebar. */
+.sb-brand.msp-portal-ready > .sb-title { display: none; }
+
+.sb-brand .msp-portal-switch {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 3px 10px;
+    align-items: center;
+    padding: 11px 12px;
+    margin: 0;
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 10px;
+    background: rgba(255,255,255,.06);
+    color: #fff;
+    cursor: pointer;
+    text-align: left;
+    font-family: inherit;
+}
+.sb-brand .msp-portal-switch:hover,
+.sb-brand .msp-portal-switch[aria-expanded="true"] {
+    background: rgba(255,255,255,.12);
+}
+.sb-brand .msp-portal-switch:focus-visible,
+.sb-brand .msp-portal-menu a:focus-visible,
+.sb-nav .msp-portal-home-link:focus-visible {
+    outline: 2px solid var(--sky, #6ED2EC);
+    outline-offset: 2px;
+}
+.sb-brand .msp-portal-eyebrow {
+    font-size: 9px;
+    line-height: 1.3;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--sky, #6ED2EC);
+}
+.sb-brand .msp-portal-current {
+    grid-column: 1;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+.sb-brand .msp-portal-chevron {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    align-self: center;
+    font-size: 18px;
+    line-height: 1;
+    color: rgba(255,255,255,.65);
+    transition: transform .15s ease;
+}
+.sb-brand .msp-portal-switch[aria-expanded="true"] .msp-portal-chevron {
+    transform: rotate(180deg);
+}
+.sb-brand .msp-portal-menu {
+    margin-top: 7px;
+    padding: 6px;
+    background: #0A2547;
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.16);
+}
+.sb-brand .msp-portal-menu[hidden] { display: none !important; }
+.sb-brand .msp-portal-menu a {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 10px;
+    border-radius: 7px;
+    color: rgba(255,255,255,.85);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.sb-brand .msp-portal-menu a:hover,
+.sb-brand .msp-portal-menu a:focus-visible {
+    background: rgba(255,255,255,.09);
+    color: #fff;
+}
+.sb-brand .msp-portal-menu a[aria-current="page"] {
+    color: var(--sky, #6ED2EC);
+    font-weight: 700;
+}
+.sb-brand .msp-portal-menu .msp-portal-all {
+    border-top: 1px solid rgba(255,255,255,.12);
+    margin-top: 3px;
+    padding-top: 11px;
+}
+.sb-nav .msp-portal-home-link { color: rgba(255,255,255,.83); }
+@media print {
+    .sb-brand .msp-portal-switch,
+    .sb-brand .msp-portal-menu,
+    .sb-nav .msp-portal-home-link { display: none !important; }
+}
+/* Preview switcher icon treatment; does not alter the planner's own nav icons. */
+.sb-brand .msp-portal-menu a { justify-content: flex-start; }
+.sb-brand .msp-portal-item-ico { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 29px; height: 29px; border-radius: 8px; background: rgba(255,255,255,.06); }
+.sb-brand .msp-portal-item-ico svg { width: 16px; height: 16px; }
+.sb-brand .msp-portal-item-name { flex: 1; }
+.sb-brand .msp-portal-here { margin-left: auto; color: var(--sky, #6ED2EC); font-size: 10px; text-transform: uppercase; }
+.msp-portal-logo-link { display: inline-block; cursor: pointer; }
+.msp-portal-logo-link:focus-visible { outline: 2px solid var(--sky, #6ED2EC); outline-offset: 3px; }
+.sb-brand .msp-portal-logo-link .sb-logo { margin-bottom: 0; }
+.sb-brand > .msp-portal-logo-link { margin-bottom: 14px; }
