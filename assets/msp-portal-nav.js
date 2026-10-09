@@ -79,13 +79,6 @@
     else { brand.appendChild(button); brand.appendChild(menu); }
     brand.classList.add('msp-portal-ready');
 
-    var back = document.createElement('a');
-    back.className = 'sb-link msp-portal-home-link'; back.href = homepage;
-    back.innerHTML = '<span class="sb-ico" aria-hidden="true">' + icons.hub + '</span>' +
-      '<span class="sb-text">All student tools<span class="sb-hint">Back to MSP homepage</span></span>';
-    var navLabel = nav.querySelector('.sb-nav-label');
-    if (navLabel) navLabel.after(back); else nav.prepend(back);
-
     function toggle(on) { menu.hidden = !on; button.setAttribute('aria-expanded', String(on)); }
     button.addEventListener('click', function () { toggle(menu.hidden); });
     document.addEventListener('click', function (event) {
