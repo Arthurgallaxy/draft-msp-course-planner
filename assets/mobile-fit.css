@@ -1,0 +1,64 @@
+/* MSP Course Planner: narrow-screen layout adjustments.
+   Only applied on screens 640px wide or narrower.
+   Does not modify planner logic or the shared MSP portal navigation. */
+@media screen and (max-width: 640px) {
+  .app-layout {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .content-area {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .main, .view, #planview, .card, .card-b {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Keep all three saved plans accessible without widening the page. */
+  .plan-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+  }
+  .plan-tabs .ptab {
+    width: 100%;
+    min-width: 0;
+    padding: 10px 5px;
+  }
+  .plan-tabs .ptab-cmp {
+    grid-column: 1 / -1;
+  }
+
+  /* A card subtitle must not determine the card's minimum width. */
+  .card-h {
+    flex-wrap: wrap;
+  }
+  .card-h .hint {
+    flex: 1 1 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin-left: 0;
+    overflow-wrap: anywhere;
+  }
+
+  /* The inline two-column grid in the study-load options needs one column on phones. */
+  #customLoadControls > div:first-child {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .field, .sw, .sw select {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  /* Details such as course prerequisites may contain long strings. */
+  .cpanel, .guidance {
+    overflow-wrap: anywhere;
+  }
+}
